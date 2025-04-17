@@ -1,0 +1,111 @@
+/* Import Quicksand font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+/* Apply Quicksand font to the entire HTML */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white; /* Sets the background color to white */
+
+
+}
+
+
+
+/* #Index-nav-text{
+    font-family: quicksand;
+}
+
+.Index-nav-text{
+    font-family: quicksand;
+}
+
+#Index-nav-item{
+    font-family: quicksand;
+}
+
+.Index-nav-item{
+    font-family: quicksand;
+} */
+
+.no-under {
+    text-decoration: none;
+}
+
+
+svg {
+    fill: white;
+}
+
+.Icon {
+    fill: white;
+  }
+
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+/* Mobile Styles */
+.toggle-btn {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
